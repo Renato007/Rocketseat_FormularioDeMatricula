@@ -21,7 +21,43 @@ label {
 input:focus,
 select:focus,
 textarea:focus {
-    outline: .25rem solid var(--surface-secondary);
-    border:  .125rem solid var(--stroke-hightlight);
-    outline-offset: .1px; /* auxilia no aparecimento das configuração no Safare*/
+  outline: 0.25rem solid var(--surface-secondary);
+  border: 0.125rem solid var(--stroke-hightlight);
+  outline-offset: 0.1px; /* auxilia no aparecimento das configuração no Safare*/
+}
+input[type="date"] {
+  position: relative;
+
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+
+  &::before{
+    content: "";
+    position: absolute;
+    background: url(../../assets/icons/calendar-03.svg) center/contain;
+    width: 1.25rem;
+    height: 1.25rem;
+    right: 1rem;
+
+    /*Uma estrategia para centralizar um elemento absolut */
+    top: 50%;
+    transform: translateY(-50%); /* movimentar 50% do tamanho do objeto para cima */
+  }
+}
+
+/* SOLUÇÃO QUE ATENDE A MAIORIA DOS NAVEGADORES MAS NÃO PARA O SAFARE */
+/* input[type="date"]{
+    position: relative;
+    &::-webkit-calendar-picker-indicator{
+        position: absolute;
+        background: url(../../assets/icons/calendar-03.svg) center/contain;
+        right: 1rem;
+    } 
+}*/
+
+select{
+    background: url(../../assets/icons/arrow-down-01.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 1rem); /*separar o elemento, 16px da margem direita*/
 }

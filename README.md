@@ -9,10 +9,11 @@ Este projeto de construir uma página de Portal de Notícia, é um projeto acad�
 
 ## O que eu aprendir com esse projeto
 * HTML
-* CSS - unidade relativa(rem/em) | CSS-nesting | overflow | estilizar pseudoelemento |
+* CSS - unidade relativa(rem/em)/layout flexivel | CSS-nesting | overflow | estilizar pseudoelemento |
 
 ## Questões apresentadas no projeto
 * Uma parte da página fixa e a outra com rolagem.
+* Confecção de uma coleção de opções todas elas ilustrativas com input radio.
 
 
 

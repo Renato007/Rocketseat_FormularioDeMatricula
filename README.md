@@ -1,7 +1,7 @@
 # Rocketseat_FormularioDeMatricula
 
 ## DESCRIÇÃO
-Este projeto de construir uma página de Portal de Notícia, é um projeto acadêmico, desafio da escola Rocketseat.
+Este projeto de construir uma página de cadastro, é um projeto acadêmico, desafio da escola Rocketseat.
 
 ##Tecnologias aplicadas
 * HTML
